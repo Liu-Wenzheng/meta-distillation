@@ -1,0 +1,38 @@
+{
+    "target": 0,
+    "batch_size": 512,
+    "num_workers": 1,
+    "epochs": 200,
+
+    "learning_rate_fc": 0.4,
+    "weight_decay": 5e-4,
+    "momentum": 0.9,
+    "warmup_epoch": 3,
+
+    "net": "resnet50",
+    "dataset": "cifar100",
+
+    "model_dir": "./save/model",
+    "distill_dir": "./save/distill",
+    "master_port": "12345",
+    "trial": 2,
+
+    "netT_type": "ViT-B/16",
+    "netT_name": "vit-base_imagenet_acc:0.817960.pth",
+    "netT_classes": 1000,
+
+    "method": "padding",
+    "prompt_size": 56,
+    "image_size": 224,
+
+    "samples": 10,
+    "sigma": 0.2,
+    "epsilon": 0.1,
+    "lr": 10,
+
+    "T": 2,
+
+    "root": "./data",
+    "dist_url": "env://"
+
+}
